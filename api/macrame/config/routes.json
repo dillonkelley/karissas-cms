@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/macrames",
+      "handler": "macrame.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/macrames/count",
+      "handler": "macrame.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/macrames/:id",
+      "handler": "macrame.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/macrames",
+      "handler": "macrame.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/macrames/:id",
+      "handler": "macrame.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/macrames/:id",
+      "handler": "macrame.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "macrames",
+  "info": {
+    "name": "macrame",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundHex": {
+      "type": "string"
+    },
+    "fontHex": {
+      "type": "string"
+    }
+  }
+}
