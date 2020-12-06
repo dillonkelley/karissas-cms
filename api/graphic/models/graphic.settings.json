@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "splash_imgs",
+  "kind": "collectionType",
+  "collectionName": "graphics",
   "info": {
-    "name": "splashImg",
+    "name": "graphic",
     "description": ""
   },
   "options": {
@@ -11,23 +11,28 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "splashIMg": {
+    "title": {
+      "type": "string"
+    },
+    "photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
       "required": false
     },
-    "title": {
+    "description": {
+      "type": "text"
+    },
+    "backgroundHex": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
+    "fontHex": {
+      "type": "string"
     }
   }
 }
