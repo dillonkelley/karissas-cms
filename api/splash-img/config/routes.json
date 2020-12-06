@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/splash-img",
+      "handler": "splash-img.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/splash-img",
+      "handler": "splash-img.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/splash-img",
+      "handler": "splash-img.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

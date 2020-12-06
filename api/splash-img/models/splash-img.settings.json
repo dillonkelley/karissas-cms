@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "splash_imgs",
+  "info": {
+    "name": "splashImg"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "splashIMg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
